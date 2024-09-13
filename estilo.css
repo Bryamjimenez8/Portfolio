@@ -1,0 +1,177 @@
+ol,
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: rgb(39, 60, 182);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+header nav ul li a {
+
+    color: white;
+    font-family: "roboto" sans-serif;
+}
+
+header a i {
+    color: white;
+    padding: 15px;
+    font-size: 2.5em;
+}
+
+div h2 p {
+    font-family: "roboto" sans-serif;
+
+}
+
+.seccion-1 img {
+    width: 50%;
+    border-radius: 10%;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.seccion-1 {
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-2 {
+    background-color: #f5f5f5;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-2 img {
+    width: 100%;
+    border-radius: 10px;
+    align-content: center;
+}
+
+footer {
+    padding: 10px;
+    display: block;
+    background-color: rgb(98, 161, 243);
+}
+
+footer div a i {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    color: orange !important;
+}
+
+.seccion-3 h3 {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 20%;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25 px;
+    color: aqua;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        background-color: rgb(172, 2, 2);
+    }
+
+    .checkbtn {
+        display: block;
+
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20 px;
+    }
+
+    #check:checked~.checkbtn {
+        color: aqua;
+    }
+
+
+    #chek:checked~ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .seccion-1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        padding: 70px;
+    }
+
+    .acerca-imagen {
+        margin: 0 auto;
+
+    }
+
+    .parrafo-1 {
+        text-align: center;
+    }
+
+}
